@@ -1,0 +1,305 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <Link rel="stylesheet" href="home.css">
+    <Link rel="stylesheet" href="new.css">
+    <Link rel="stylesheet" href="about.css">
+    <link rel="icon" href="photos/logo.jpg" />
+</head>
+<body>
+
+    <header>
+
+        <a href="#" class="brand"><img src="photos/logo.jpg" alt="" /></a>
+        
+        <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAUxJREFUSEu1lYFNwzAQRV8nYATKBMAE7QgwAXQCYALoBLQTABMAGzAC3QA2gAlAP7Ktw7V9DlJOsiIl9r3z+ftnxsQxmzg/PYBLYAGchKGa3sN4AV5bRbYAZ8A9MHd2+QHcAILtRQ2wAa5Gtk9rBPoTJcB/ksekW+DaEnKA2vLcqPwzJLDtuANuzZpz264coH4eVgDf4ZA1x0YO0PejOMECpJaHRvVPgObEWAZ16alhI+3CAh6BiwZgDahahdfKVIwFSNvHnYC8Lfky5TrVSwv4cWRpd+ABUu4egHfb38JZ5PUN6+zimoI8wBdwkGXfRVvpOWQPUGpt8ZA9mY45gxUgVe65aeui9QJ025NBjrGKXkDTKrSrmtn1AFyzi2Io3WoPkFvJkMv74Wg30fxqgJLDJtV6EtREqUtmpgs1KKPyrmgEPQDHQdqfJwf8ArJlSRlOmzLXAAAAAElFTkSuQmCC" /></a>
+        <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAXRJREFUSEvFlbsuRFEUhr9pNFPQaDRDLy4vwLwBSokErQTxBHgDxNQukSh5AzyBywugVqmU5Je15WTZ+5x9ZnIyuztnr/X/a/3rsls0fFoN4zM0gjlgF+gCkxVZvgH3wDHw5G1jGWwAZ31KtwmcF309gSJ/7BM8uM0XM/EEYl+vQfAJLJuU++Z3AUiF3+MJpGcnQSBHaTxmdVEg+lbEIrkxP2FMpQi+I+DPBiDHcbv/ACSnMh41UhH/w/UZxAgUzQSwBiwCsnkAroCvRM3+cKsIgp49YMtldwpsA7fAkrvLJtgDLi3iaQfyAswCB0AocG2JDoET4A6YcQShwAMRBIk0pTuO4AhQhgNJJEy14QiwCiwYiYp8DbQtu+SGqCqyHNWeK5E9oz2l3i+2Z2UNygZNUoRlphnQcMWO5kb30UmuuypiBKWrQqv5NRFZ7u/SZSeQRtd1iFKZqL9VyNTyC7bv9uCobbMenFwpsuyG9iZnRZdj9AO5y0cZdyMG3QAAAABJRU5ErkJggg==" /></a>
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"></path></svg></a>
+        <a href="https://api.whatsaap.com/send?phone=+254702098927&text=Hello%20there!"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAbRJREFUSEvNleExBEEQRt9lQATIQAbIgAgQASJABIiADMiAiwARkAEioN5V99aYnZ37dVXXVVNXtzvTX/fr7tkZK7bZiv2zFgL7wDGwG+sbeANegHn8ToLoZbAN3AMK/BRON0JoL7w+AaeAwiObEjDaZ1ggvAWuJkI8B27C+VErm5aAEX5E1IcRea8XDOYB2AJ26kxaAqYsFpesFXR9dlQUeQU8ayaD1QK58TqwWAcPytfoepa4FFBoYbWAvM+AzXCah9xrIUXRs1/gDvBcU8DW08SjlQL/IptQqc+PMpCzm07CgYgsuIjMaplJwJkZ9taIFLCwdk9aZiEeMfXMdr4s0dcCoxTDm86NzN8LIIfQYso8h8z/NorvmzXIItsxdVvmO5250kl2nA59rkgiHtUgmZeHSiQWXwx5TXiF5Lzo1KvloJzo1qBNYSqFDMRlvTIb5+W96MAmIh+OenlJYWVu5GLNbIYjdQZ2z2MU8isOWIuykHnY68OhtMv0M3LuxqlJbgUtOsVEYtQ5jH4T5N+8q2oBmeaw6dD/sjbKbD8j97nLjsmaNUmuxSdz2fXQfb/yDP4AZJloGU7UfncAAAAASUVORK5CYII=" /></a>
+        <a href=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPJJREFUSEvtldsRwUAUhr9UgAqUgEoogQ6oIDqhBDqhAypABcyf2TVn4uQikZeMfcrsnvPf9pKEjkfSMT79IlgAKTBtGdsF2AAH4diItDBuCR7bT8AsT/AMq0dg3pDI9mbirYNIoDnFtQcGNYkewDLEYnFcghFwB4aBpMqNVAs89tyCqEIHKlzFTSpxY1ULU653Qdg7HS+imIpOgYg8N3nVAhaBHYUObJHnRuvZEXRUf03gudGc9sdT3ZhAjdGNvm3WRQetVkQ1T6lb9ieoTO8jol8+duf4KtuLpouyBSaV2soLrsDae65b4vrt/fpldhLRC6AYNhngkXrwAAAAAElFTkSuQmCC" />mail@.com</a>
+                        <div class="menu-btn">MENU</div>
+
+                        <div class="navigation">
+
+                            <div class="navigation-items flex">
+                                <div class="sub-menu-1">
+                                    <a href="#">Home</a>
+
+                                    <a href="aboutus.html">About</a>
+                                    <a href="services.html">Services</a>
+                                    <a href="products.html">Products</a>
+                                    <a href="#">Contacts</a>
+
+                                </div>
+                            </div>
+
+                        </div>
+</header>
+    <section class="home">
+        <img class="video-slide active" src="image6.jpeg" />
+        <img class="video-slide" src="spare9.jpeg" />
+        <img class="video-slide" src="photos/images11.jpeg" />
+        <img class="video-slide" src="photos/car.jpg" />
+        <img class="video-slide" src="image6.jpeg" />
+        <div class="content active">
+            <h1>Our Products<br><h2>Genuine Toyota parts</h2></h1>
+            <p>
+                We only ever fit genuine automotive parts,which have been designed and tested to the exacting standards.
+                We are the biggest and leading automotive spare parts, tires, batteries and industrial lubricants
+                supplier in in the Republic of South Sudan.
+                Our Spare Parts Department has a large volume of stock inventory and maintains the highest
+                supply fill rate in the market. Situated in a 500 sq m lot area. Due to its efficient logistical facilities,
+                the company offers the most competitive pricing structure. We cater to both retail and wholesale
+                spare parts business to our customers.
+                We are dealing in spare parts for major brands such as Toyota, Nissan, and Mitsubishi among
+            </p>
+            <a href="products.html">Read More</a>
+        </div>
+        <div class="content">
+            <h1>Auto Service Centre<br><h2>Benefits of servicing your car at Agab Trading And Investment Co.Ltd. </h2></h1>
+            <ul>
+                <li>Well trained and experienced technicians our technicians have undertaken extensive training in the field.They will service your vehicle to the highest standards in full compliance with the terms of your vehicle's needs.</li>
+
+
+            </ul>
+
+
+            <a href="services.html">Read More</a>
+        </div>
+        <div class="content">
+            <h1>TYRE DEPARTMENT<br><h2>THE JK TYRES</h2></h1>
+            <p>The Indian made JK brand of tires.One of the best in performance and durability.</p>
+
+            <a href="#">Read More</a>
+        </div>
+        <div class="content">
+            <h1>rent cars<br><span>Autospares</span></h1>
+            <p>
+                Trading and Investment Company Limited was established in 2008 as a private firm for General
+                Trading, catering to wide variety of product brands and makes. The company was founded by
+
+
+            </p>
+            <a href="rent.html">Read More</a>
+        </div>
+        <div class="content">
+            <h1>Maintainance<br><span>Autospares</span></h1>
+            <p>
+                Trading and Investment Company Limited was established in 2008 as a private firm for General
+                Trading, catering to wide variety of product brands and makes. The company was founded by
+
+
+            </p>
+            <a href="#">Read More</a>
+        </div>
+        
+        <div class="slider-navigation">
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+        </div>
+
+    </section>
+    <script type="text/javascript">
+        const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navigation");
+
+        menuBtn.addEventListener("click", () => {
+            menuBtn.classList.toggle("active");
+            navigation.classList.toggle("active");
+        });
+        const btns = document.querySelectorAll(".nav-btn");
+        const slides = document.querySelectorAll(".video-slide");
+        const contents = document.querySelectorAll(".content");
+
+        var sliderNav = function (manual) {
+            btns.forEach((btn) => {
+                btn.classList.remove("active");
+            });
+
+            slides.forEach((slide) => {
+                slide.classList.remove("active");
+            });
+
+            contents.forEach((content) => {
+                content.classList.remove("active");
+            });
+
+            btns[manual].classList.add("active");
+            slides[manual].classList.add("active");
+            contents[manual].classList.add("active");
+        }
+        btns.forEach((btn, i) => {
+            btn.addEventListener("click", () => {
+                sliderNav(i);
+            });
+        });
+    </script>
+    <!---section B why choose us starts here-->
+
+    <section class="book">
+        <div class="form-container">
+
+            <form action="">
+                <right>
+                    <h4>Book Now</h4>
+                </right>
+                <div class="input-box">
+                    <span>Location</span>
+                    <input type="search" name="" id="" placeholder="Search Places" />
+                </div>
+                <div class="input-box">
+                    <span>Pick-Up Date</span>
+                    <input type="date" name="" id="" />
+                </div>
+                <div class="input-box">
+                    <span>Return Date</span>
+                    <input type="date" name="" id="" />
+                </div>
+                <input type="submit" name="" id="" class="btn" />
+            </form>
+
+        </div>
+    </section>
+    <div class="ourservices">
+        <h1 style="text-align:center;">WHY CHOOSE US?</h1>
+    </div>
+    <div class=container2>
+
+        <div class=card2>
+            <div class="face face1">
+                <div class="content">
+                    <img src="spare9.jpeg" />
+                    <h3>PROFESSIONAL SERVICES</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+
+                    <p2>We service a wide range of car models.</p2>
+
+
+                    <a href="#">readmore</a>
+                </div>
+            </div>
+        </div>
+        <div class=card2>
+            <div class="face face1">
+                <div class="content">
+                    <img src="photos/images7.jpeg" class="contentone" />
+                    <h3>SKILLED WORKERS</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+
+                    <p2>We have experienced and dedicated team.</p2>
+
+
+
+                    <a href="#team">readmore</a>
+                </div>
+            </div>
+        </div>
+        <div class=card2>
+            <div class="face face1">
+                <div class="content">
+                    <div class="contenttwo">
+                        <img src="photos/images9.jpeg" />
+                        <h3>LONG TERM WARRANTLY</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+
+                    <p2>We have diagnostic equipments for diffent models</p2><br>
+                    <p2>We deal in various types of spare part</p2>
+                    </br>
+                    <a href="#">readmore</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="reviews" id="reviews">
+        <div class="heading">
+            <span>Reviews</span>
+            <h1>Whats Our Customer Say</h1>
+
+        </div>
+        <div class="reviews-container">
+            <div class="box">
+                <div class="rev-img">
+                    <img src="photos/car.jpg" alt="" />
+                </div>
+                <h2>Name</h2>
+                <div class="stars">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAT1JREFUSEu1lYFRAjEQRR8VAB1IBUAFSAVqB1gBUgFQAXaAdmAHYgdQAZQgFcB8J2FCSC6Jx+3Mzdwkd//vZv/+tGg4Wg3jU0qwBU7AMDexEoIJsDbAr8BHDkkJwQYYGVC9j+9J8Ah8e4AiEFFl5FbwBTx5SJ+Ajq02wQOwj6D0gEMVg1vBM9AHBKhH0QEGiSSlrF/zjcj07ABVfSVTye+e8Ze8W4Erw7pEFxn7Ta5LcgTe3BkJqei/JAKXnNWTS8RkWkoSBPd74J/7OzDNbEZ06KoGzbWGFM8MUEI3UUVQItsfc/7ZBCHvSVXRdQYu2WRJbRVAXJq1eWDvxU5vjop8c9PoS1lWgrIP3QeyFhtB84v1QN7SNn8q60XkfLRuq5EHyfyuIkZgM3WzjvXAVqP9G2PMvQ9SDY7uN05wBhfJNRknNMUtAAAAAElFTkSuQmCC" />
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAT1JREFUSEu1lYFRAjEQRR8VAB1IBUAFSAVqB1gBUgFQAXaAdmAHYgdQAZQgFcB8J2FCSC6Jx+3Mzdwkd//vZv/+tGg4Wg3jU0qwBU7AMDexEoIJsDbAr8BHDkkJwQYYGVC9j+9J8Ah8e4AiEFFl5FbwBTx5SJ+Ajq02wQOwj6D0gEMVg1vBM9AHBKhH0QEGiSSlrF/zjcj07ABVfSVTye+e8Ze8W4Erw7pEFxn7Ta5LcgTe3BkJqei/JAKXnNWTS8RkWkoSBPd74J/7OzDNbEZ06KoGzbWGFM8MUEI3UUVQItsfc/7ZBCHvSVXRdQYu2WRJbRVAXJq1eWDvxU5vjop8c9PoS1lWgrIP3QeyFhtB84v1QN7SNn8q60XkfLRuq5EHyfyuIkZgM3WzjvXAVqP9G2PMvQ9SDY7uN05wBhfJNRknNMUtAAAAAElFTkSuQmCC" />
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAT1JREFUSEu1lYFRAjEQRR8VAB1IBUAFSAVqB1gBUgFQAXaAdmAHYgdQAZQgFcB8J2FCSC6Jx+3Mzdwkd//vZv/+tGg4Wg3jU0qwBU7AMDexEoIJsDbAr8BHDkkJwQYYGVC9j+9J8Ah8e4AiEFFl5FbwBTx5SJ+Ajq02wQOwj6D0gEMVg1vBM9AHBKhH0QEGiSSlrF/zjcj07ABVfSVTye+e8Ze8W4Erw7pEFxn7Ta5LcgTe3BkJqei/JAKXnNWTS8RkWkoSBPd74J/7OzDNbEZ06KoGzbWGFM8MUEI3UUVQItsfc/7ZBCHvSVXRdQYu2WRJbRVAXJq1eWDvxU5vjop8c9PoS1lWgrIP3QeyFhtB84v1QN7SNn8q60XkfLRuq5EHyfyuIkZgM3WzjvXAVqP9G2PMvQ9SDY7uN05wBhfJNRknNMUtAAAAAElFTkSuQmCC" />
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAT1JREFUSEu1lYFRAjEQRR8VAB1IBUAFSAVqB1gBUgFQAXaAdmAHYgdQAZQgFcB8J2FCSC6Jx+3Mzdwkd//vZv/+tGg4Wg3jU0qwBU7AMDexEoIJsDbAr8BHDkkJwQYYGVC9j+9J8Ah8e4AiEFFl5FbwBTx5SJ+Ajq02wQOwj6D0gEMVg1vBM9AHBKhH0QEGiSSlrF/zjcj07ABVfSVTye+e8Ze8W4Erw7pEFxn7Ta5LcgTe3BkJqei/JAKXnNWTS8RkWkoSBPd74J/7OzDNbEZ06KoGzbWGFM8MUEI3UUVQItsfc/7ZBCHvSVXRdQYu2WRJbRVAXJq1eWDvxU5vjop8c9PoS1lWgrIP3QeyFhtB84v1QN7SNn8q60XkfLRuq5EHyfyuIkZgM3WzjvXAVqP9G2PMvQ9SDY7uN05wBhfJNRknNMUtAAAAAElFTkSuQmCC" />
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAYZJREFUSEu1lYExRDEQhr+rABWgAlSAClABKkAFqAAVcBXQATqgAjpABcx3k9zsxcu7vOF25s3lMtn/z+7+uxmxYBstGJ+hBC/AN7DVerEhBEfAbQI+Bu5aSIYQPAHbCdT17n8S7ACPCfALWEoEEvVaawQPwF5CugTOgTFg2v5MsAa8BZT18N/1ex9DjGAf2AAE9NOWgc0CQB8LfJj2VdZnWkvm9woY9YxMlV+LSVBG1eU3uXyMIMqwNWrPGaGRXqcMuDeVcVnkFpLSR/CrVHAVdhp7pEtF80iij+DK1ygEV87WZGo1mfaRRB/BFEYneFmDMu/m9KSjGJFAxaz2NV1fo8XRUIs6y/UsFfnXffoIarI1LarEX3vnHnhO+W8miLOnJtkL4Ab4SAdWQsPNLbJSU3qlOYc0Z5FmFCrJxjvI3duiojjcPG/rq6wsQWVp/lVQts7hV6uBs8WRrHlr09Fl7udoVJTDb8ZqBPmm8dYVjkmT5detHIyD3+QaSXW/9cEZDJwdfgD6f0YZZiqHGgAAAABJRU5ErkJggg==" />
+                </div>
+                <p>Have enjoyed their services for a quit long time</p>
+            </div>
+            <div class="box">
+                <div class="rev-img">
+                    <img src="photos/car.jpg" alt="" />
+                </div>
+                <h2>Name</h2>
+                <div class="stars">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAT1JREFUSEu1lYFRAjEQRR8VAB1IBUAFSAVqB1gBUgFQAXaAdmAHYgdQAZQgFcB8J2FCSC6Jx+3Mzdwkd//vZv/+tGg4Wg3jU0qwBU7AMDexEoIJsDbAr8BHDkkJwQYYGVC9j+9J8Ah8e4AiEFFl5FbwBTx5SJ+Ajq02wQOwj6D0gEMVg1vBM9AHBKhH0QEGiSSlrF/zjcj07ABVfSVTye+e8Ze8W4Erw7pEFxn7Ta5LcgTe3BkJqei/JAKXnNWTS8RkWkoSBPd74J/7OzDNbEZ06KoGzbWGFM8MUEI3UUVQItsfc/7ZBCHvSVXRdQYu2WRJbRVAXJq1eWDvxU5vjop8c9PoS1lWgrIP3QeyFhtB84v1QN7SNn8q60XkfLRuq5EHyfyuIkZgM3WzjvXAVqP9G2PMvQ9SDY7uN05wBhfJNRknNMUtAAAAAElFTkSuQmCC" />
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAT1JREFUSEu1lYFRAjEQRR8VAB1IBUAFSAVqB1gBUgFQAXaAdmAHYgdQAZQgFcB8J2FCSC6Jx+3Mzdwkd//vZv/+tGg4Wg3jU0qwBU7AMDexEoIJsDbAr8BHDkkJwQYYGVC9j+9J8Ah8e4AiEFFl5FbwBTx5SJ+Ajq02wQOwj6D0gEMVg1vBM9AHBKhH0QEGiSSlrF/zjcj07ABVfSVTye+e8Ze8W4Erw7pEFxn7Ta5LcgTe3BkJqei/JAKXnNWTS8RkWkoSBPd74J/7OzDNbEZ06KoGzbWGFM8MUEI3UUVQItsfc/7ZBCHvSVXRdQYu2WRJbRVAXJq1eWDvxU5vjop8c9PoS1lWgrIP3QeyFhtB84v1QN7SNn8q60XkfLRuq5EHyfyuIkZgM3WzjvXAVqP9G2PMvQ9SDY7uN05wBhfJNRknNMUtAAAAAElFTkSuQmCC" />
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAT1JREFUSEu1lYFRAjEQRR8VAB1IBUAFSAVqB1gBUgFQAXaAdmAHYgdQAZQgFcB8J2FCSC6Jx+3Mzdwkd//vZv/+tGg4Wg3jU0qwBU7AMDexEoIJsDbAr8BHDkkJwQYYGVC9j+9J8Ah8e4AiEFFl5FbwBTx5SJ+Ajq02wQOwj6D0gEMVg1vBM9AHBKhH0QEGiSSlrF/zjcj07ABVfSVTye+e8Ze8W4Erw7pEFxn7Ta5LcgTe3BkJqei/JAKXnNWTS8RkWkoSBPd74J/7OzDNbEZ06KoGzbWGFM8MUEI3UUVQItsfc/7ZBCHvSVXRdQYu2WRJbRVAXJq1eWDvxU5vjop8c9PoS1lWgrIP3QeyFhtB84v1QN7SNn8q60XkfLRuq5EHyfyuIkZgM3WzjvXAVqP9G2PMvQ9SDY7uN05wBhfJNRknNMUtAAAAAElFTkSuQmCC" />
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAT1JREFUSEu1lYFRAjEQRR8VAB1IBUAFSAVqB1gBUgFQAXaAdmAHYgdQAZQgFcB8J2FCSC6Jx+3Mzdwkd//vZv/+tGg4Wg3jU0qwBU7AMDexEoIJsDbAr8BHDkkJwQYYGVC9j+9J8Ah8e4AiEFFl5FbwBTx5SJ+Ajq02wQOwj6D0gEMVg1vBM9AHBKhH0QEGiSSlrF/zjcj07ABVfSVTye+e8Ze8W4Erw7pEFxn7Ta5LcgTe3BkJqei/JAKXnNWTS8RkWkoSBPd74J/7OzDNbEZ06KoGzbWGFM8MUEI3UUVQItsfc/7ZBCHvSVXRdQYu2WRJbRVAXJq1eWDvxU5vjop8c9PoS1lWgrIP3QeyFhtB84v1QN7SNn8q60XkfLRuq5EHyfyuIkZgM3WzjvXAVqP9G2PMvQ9SDY7uN05wBhfJNRknNMUtAAAAAElFTkSuQmCC" />
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAYZJREFUSEu1lYExRDEQhr+rABWgAlSAClABKkAFqAAVcBXQATqgAjpABcx3k9zsxcu7vOF25s3lMtn/z+7+uxmxYBstGJ+hBC/AN7DVerEhBEfAbQI+Bu5aSIYQPAHbCdT17n8S7ACPCfALWEoEEvVaawQPwF5CugTOgTFg2v5MsAa8BZT18N/1ex9DjGAf2AAE9NOWgc0CQB8LfJj2VdZnWkvm9woY9YxMlV+LSVBG1eU3uXyMIMqwNWrPGaGRXqcMuDeVcVnkFpLSR/CrVHAVdhp7pEtF80iij+DK1ygEV87WZGo1mfaRRB/BFEYneFmDMu/m9KSjGJFAxaz2NV1fo8XRUIs6y/UsFfnXffoIarI1LarEX3vnHnhO+W8miLOnJtkL4Ab4SAdWQsPNLbJSU3qlOYc0Z5FmFCrJxjvI3duiojjcPG/rq6wsQWVp/lVQts7hV6uBs8WRrHlr09Fl7udoVJTDb8ZqBPmm8dYVjkmT5detHIyD3+QaSXW/9cEZDJwdfgD6f0YZZiqHGgAAAABJRU5ErkJggg==" />
+                </div>
+                <p>Have enjoyed their services for a quit long time</p>
+            </div>
+            <div class="box">
+                <div class="rev-img">
+                    <img src="photos/car.jpg" alt="" />
+                </div>
+                <h2>NAME</h2>
+                <div class="stars">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAT1JREFUSEu1lYFRAjEQRR8VAB1IBUAFSAVqB1gBUgFQAXaAdmAHYgdQAZQgFcB8J2FCSC6Jx+3Mzdwkd//vZv/+tGg4Wg3jU0qwBU7AMDexEoIJsDbAr8BHDkkJwQYYGVC9j+9J8Ah8e4AiEFFl5FbwBTx5SJ+Ajq02wQOwj6D0gEMVg1vBM9AHBKhH0QEGiSSlrF/zjcj07ABVfSVTye+e8Ze8W4Erw7pEFxn7Ta5LcgTe3BkJqei/JAKXnNWTS8RkWkoSBPd74J/7OzDNbEZ06KoGzbWGFM8MUEI3UUVQItsfc/7ZBCHvSVXRdQYu2WRJbRVAXJq1eWDvxU5vjop8c9PoS1lWgrIP3QeyFhtB84v1QN7SNn8q60XkfLRuq5EHyfyuIkZgM3WzjvXAVqP9G2PMvQ9SDY7uN05wBhfJNRknNMUtAAAAAElFTkSuQmCC" />
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAT1JREFUSEu1lYFRAjEQRR8VAB1IBUAFSAVqB1gBUgFQAXaAdmAHYgdQAZQgFcB8J2FCSC6Jx+3Mzdwkd//vZv/+tGg4Wg3jU0qwBU7AMDexEoIJsDbAr8BHDkkJwQYYGVC9j+9J8Ah8e4AiEFFl5FbwBTx5SJ+Ajq02wQOwj6D0gEMVg1vBM9AHBKhH0QEGiSSlrF/zjcj07ABVfSVTye+e8Ze8W4Erw7pEFxn7Ta5LcgTe3BkJqei/JAKXnNWTS8RkWkoSBPd74J/7OzDNbEZ06KoGzbWGFM8MUEI3UUVQItsfc/7ZBCHvSVXRdQYu2WRJbRVAXJq1eWDvxU5vjop8c9PoS1lWgrIP3QeyFhtB84v1QN7SNn8q60XkfLRuq5EHyfyuIkZgM3WzjvXAVqP9G2PMvQ9SDY7uN05wBhfJNRknNMUtAAAAAElFTkSuQmCC" />
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAT1JREFUSEu1lYFRAjEQRR8VAB1IBUAFSAVqB1gBUgFQAXaAdmAHYgdQAZQgFcB8J2FCSC6Jx+3Mzdwkd//vZv/+tGg4Wg3jU0qwBU7AMDexEoIJsDbAr8BHDkkJwQYYGVC9j+9J8Ah8e4AiEFFl5FbwBTx5SJ+Ajq02wQOwj6D0gEMVg1vBM9AHBKhH0QEGiSSlrF/zjcj07ABVfSVTye+e8Ze8W4Erw7pEFxn7Ta5LcgTe3BkJqei/JAKXnNWTS8RkWkoSBPd74J/7OzDNbEZ06KoGzbWGFM8MUEI3UUVQItsfc/7ZBCHvSVXRdQYu2WRJbRVAXJq1eWDvxU5vjop8c9PoS1lWgrIP3QeyFhtB84v1QN7SNn8q60XkfLRuq5EHyfyuIkZgM3WzjvXAVqP9G2PMvQ9SDY7uN05wBhfJNRknNMUtAAAAAElFTkSuQmCC" />
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAT1JREFUSEu1lYFRAjEQRR8VAB1IBUAFSAVqB1gBUgFQAXaAdmAHYgdQAZQgFcB8J2FCSC6Jx+3Mzdwkd//vZv/+tGg4Wg3jU0qwBU7AMDexEoIJsDbAr8BHDkkJwQYYGVC9j+9J8Ah8e4AiEFFl5FbwBTx5SJ+Ajq02wQOwj6D0gEMVg1vBM9AHBKhH0QEGiSSlrF/zjcj07ABVfSVTye+e8Ze8W4Erw7pEFxn7Ta5LcgTe3BkJqei/JAKXnNWTS8RkWkoSBPd74J/7OzDNbEZ06KoGzbWGFM8MUEI3UUVQItsfc/7ZBCHvSVXRdQYu2WRJbRVAXJq1eWDvxU5vjop8c9PoS1lWgrIP3QeyFhtB84v1QN7SNn8q60XkfLRuq5EHyfyuIkZgM3WzjvXAVqP9G2PMvQ9SDY7uN05wBhfJNRknNMUtAAAAAElFTkSuQmCC" />
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAYZJREFUSEu1lYExRDEQhr+rABWgAlSAClABKkAFqAAVcBXQATqgAjpABcx3k9zsxcu7vOF25s3lMtn/z+7+uxmxYBstGJ+hBC/AN7DVerEhBEfAbQI+Bu5aSIYQPAHbCdT17n8S7ACPCfALWEoEEvVaawQPwF5CugTOgTFg2v5MsAa8BZT18N/1ex9DjGAf2AAE9NOWgc0CQB8LfJj2VdZnWkvm9woY9YxMlV+LSVBG1eU3uXyMIMqwNWrPGaGRXqcMuDeVcVnkFpLSR/CrVHAVdhp7pEtF80iij+DK1ygEV87WZGo1mfaRRB/BFEYneFmDMu/m9KSjGJFAxaz2NV1fo8XRUIs6y/UsFfnXffoIarI1LarEX3vnHnhO+W8miLOnJtkL4Ab4SAdWQsPNLbJSU3qlOYc0Z5FmFCrJxjvI3duiojjcPG/rq6wsQWVp/lVQts7hV6uBs8WRrHlr09Fl7udoVJTDb8ZqBPmm8dYVjkmT5detHIyD3+QaSXW/9cEZDJwdfgD6f0YZZiqHGgAAAABJRU5ErkJggg==" />
+                </div>
+                <p>Have enjoyed their services for a quit long time</p>
+            </div>
+        </div>
+    </section>
+
+    <!--section B why choose us ends here-->
+    <section class="patners">
+        <h2>Our Partners</h2>
+        <img src="bmw.jpeg" alt="BMW">
+        <img src="daewoo.png" alt="BMW">
+        <img src="hyundai.png" alt="BMW">
+        <img src="honda.png" alt="BMW">
+        <img src="nissan.jpeg" alt="BMW">
+        <img src="W.jpeg" alt="BMW">
+        <img src="ford.jpeg" alt="BMW">
+        <img src="Toyota.png" alt="BMW">
+
+    </section>
+    
+    <footer>
+        <p>Copyright © 2023|All rights reserved Agab Trading Co.Ltd</p>
+        <p>Contact us at <a href="">mail@.com</a></p>
+        <p>Designed by Damaris Mwangi</p>
+    </footer>
+    <!--whatsaap enabled-->
+    <a href="https://api.whatsaap.com/send?phone=+254702098927&text=Hello%20there!">send us a message on whatsaap</a>
+    <!--whatsaap ends here-->
+    <script type="text/javascript" src="https://popupsmart.com/freechat.js"></script>
+    <script>window.start.init({ title: "Hi there ✌️ Welcome to AGAB TRADING AND INVESTMENT CO. LTD.", message: "How may we help you? Just send us a message now to get assistance.", color: "#3BCE79", position: "right", placeholder: "Enter your message", withText: "Write with", viaWhatsapp: "Or write us directly via Whatsapp", gty: "Go to your", awu: "and write us", connect: "Connect now", button: "Write us", device: "everywhere", person: "https://d2r80wdbkwti6l.cloudfront.net/YVKmnpl5Ork6B7BYxjFy15OiNz2Fcz6v.jpg", services: [{ "name": "whatsapp", "content": null }] })</script>
+</body>
+
+</html>

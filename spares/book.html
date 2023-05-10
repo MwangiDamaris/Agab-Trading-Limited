@@ -1,0 +1,19 @@
+<html>
+<body>
+    <div id="book appointment">
+        <form id="appointment-form">
+            <button type="submit" id="submit-btn">Book Appointment</button>
+        </form>
+    </div>
+    <script>
+        const form = document.querySelector('#appointment-form');
+        const submitBtn = document.querySelector('#submit-btn');
+        const bookAppointment = document.querySelector('#book-appointment');
+
+        submitBtn.addEventListener('click', (event) => {
+            event.preventDefault();
+            bookAppointment.style.display = 'none';
+        });
+    </script>
+</body>
+</html>

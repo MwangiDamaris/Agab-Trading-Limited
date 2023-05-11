@@ -24,6 +24,7 @@ header {
     padding: 15px 200px;
     transition: 0.5s ease;
     background-color:#1680AC;
+    flex-wrap:nowrap;
 }
 
 header .brand{
@@ -255,12 +256,16 @@ span {
     font-style:italic;
     
 }
+.fom {
+    position: inherit;
+    flex-wrap: nowrap;
+}
 .form-container form {
     display: flex;
     
     align-items: center;
     gap: 1rem;
-    position: absolute;
+    
     bottom: -5rem;
     left: 250px;
     background: rgba(3, 96,251,0.3);

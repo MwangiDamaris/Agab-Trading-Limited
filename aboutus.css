@@ -102,12 +102,22 @@ a:hover {
 
 }
 .inline {
-    display: grid;
+    display: flex;
     grid-auto-columns: 38%;
     grid-auto-flow: column;
-    padding: 25px 0px;
+    padding: 25px 5px;
     list-style: none;
+    flex-wrap:wrap;
+    gap:10px;
     
+}
+.inline1 {
+    display: grid;
+    grid-auto-columns:inherit;
+    grid-auto-flow: column;
+    padding: 10px 0;
+    
+    gap: 5px;
 }
 .main:hover{
     transform: scale(1.1);

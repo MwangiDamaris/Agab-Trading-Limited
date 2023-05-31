@@ -203,7 +203,7 @@ header .navigation.active {
     .home .content {
         z-index: 888;
         color: #fff;
-        width: 70%;
+        width: 100%;
         margin-top: 50px;
         display: none;
     }
